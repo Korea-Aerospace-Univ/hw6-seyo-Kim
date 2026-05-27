@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void)
+int main()
 {
     char A[10]; 
     char *p, *q; 
@@ -8,7 +8,7 @@ int main(void)
     char Maxchar; 
     
     for (p = A; A < p + 10; p++)
-        scanf("%c", p);
+        scanf(" %c", p);
         
     for (p = A; A < p + 10; p++)
         count = 0;
@@ -21,7 +21,7 @@ int main(void)
         Maxcount = count;
         Maxchar = *p;
         
-    printf("%c %d",Maxchar, Maxcount);
+    printf("%c %d\n",Maxchar, Maxcount);
         
 
     return 0;
