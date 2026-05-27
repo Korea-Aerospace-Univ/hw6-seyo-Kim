@@ -14,7 +14,7 @@ int main()
         scanf("%d", q);
         
     int *q = B + N - 1;
-    for (int *p = A; p < A + N; p++, q++) {
+    for (int *p = A; p < A + N; p++, q--) {
         printf(" %d", *p + *q);
     } printf("\n");
 
