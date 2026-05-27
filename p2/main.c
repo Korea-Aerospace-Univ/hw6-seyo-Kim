@@ -7,14 +7,14 @@ int main()
     
     scanf("%d", &N);
     
-    for (int *p = A; A < p + N; p++)
+    for (int *p = A; p < A + N; p++)
         scanf("%d", p);
         
-    for (int *q = B; B < q + N; q++)
+    for (int *q = B; q < B + N; q++)
         scanf("%d", q);
         
     int *q = B + N - 1;
-    for (int *p = A; A < p + N; p++, q++) {
+    for (int *p = A; p < A + N; p++, q++) {
         printf(" %d", *p + *q);
     } printf("\n");
 
