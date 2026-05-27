@@ -8,7 +8,7 @@ int main()
     char Maxchar; 
     
     for (p = A; p < A + 10; p++)
-        scanf(" %c", p);
+        scanf("%c", p);
         
     for (p = A; p < A + 10; p++)
         count = 0;
