@@ -7,13 +7,13 @@ int main()
     int count, Maxcount = 0; 
     char Maxchar; 
     
-    for (p = A; A < p + 10; p++)
+    for (p = A; p < A + 10; p++)
         scanf(" %c", p);
         
-    for (p = A; A < p + 10; p++)
+    for (p = A; p < A + 10; p++)
         count = 0;
         
-        for(q = A; A < q + 10; q++)
+        for(q = A; q < A + 10; q++)
             if(*p == *q)
                 count++;
     
