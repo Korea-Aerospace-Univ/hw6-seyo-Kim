@@ -2,22 +2,21 @@
 
 int main()
 {
-    char A[20], B[20]; 
-    char *p, *q; 
+    int A[20], B[20];
     int N; 
     
     scanf("%d", &N);
     
-    for (p = A; A < p + N; p++)
-        scanf("%c", p);
+    for (int *p = A; A < p + N; p++)
+        scanf("%d", p);
         
-    for (q = B; B < q + N; q++)
-        scanf("%c", q);
+    for (int *q = B; B < q + N; q++)
+        scanf("%d", q);
         
-    q = b + N - 1;
-    for (p = A; A < p + N; p++; q++) {
+    int *q = B + N - 1;
+    for (int *p = A; A < p + N; p++, q++) {
         printf(" %d", *p + *q);
-    } printf("\n")
+    } printf("\n");
 
     return 0;
 }
