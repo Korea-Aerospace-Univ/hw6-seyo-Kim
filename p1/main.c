@@ -10,17 +10,21 @@ int main()
     for (p = A; p < A + 10; p++)
         scanf("%c", p);
         
-    for (p = A; p < A + 10; p++)
+    for (p = A; p < A + 10; p++){
         count = 0;
         
-        for(q = A; q < A + 10; q++)
-            if(*p == *q)
+        for(q = A; q < A + 10; q++) {
+            if(*p == *q){
                 count++;
+            }
+        }
     
-    if(count > Maxcount)
-        Maxcount = count;
-        Maxchar = *p;
-        
+        if(count > Maxcount) {
+            Maxcount = count;
+            Maxchar = *p;
+        }
+    }
+    
     printf("%c %d\n",Maxchar, Maxcount);
         
 
